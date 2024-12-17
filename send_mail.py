@@ -72,6 +72,8 @@ def send_mail():
     # Send the email
     try:
         server = smtplib.SMTP("0.0.0.0", 25)   #IP Address of SMTP Server with port number
+        # server.starttls() # start tls for security..if it gives error comment this line of code
+        # server.login(sender_email, password) #sender email password if required
         server.sendmail(sender_email, all_emails, msg.as_string())
         server.quit()
         print("Email sent successfully.")
