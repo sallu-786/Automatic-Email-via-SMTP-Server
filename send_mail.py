@@ -23,7 +23,6 @@ html_message = """
 <body>
     
     I am the Best<br>
-
 <a href="https://bbc.com/">BBC</a><br>
 <br>
 </body>
